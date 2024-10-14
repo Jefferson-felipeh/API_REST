@@ -4,11 +4,20 @@
   "description": "API REST",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts"
   },
   "author": "Jefferson",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.7.5",
+    "prisma": "^5.20.0",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@prisma/client": "^5.20.0",
+    "fastify": "^5.0.0",
+    "joi": "^17.13.3",
+    "tsx": "^4.19.1"
   }
 }
